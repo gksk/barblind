@@ -1,9 +1,46 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Three
+      Configuration
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+
+ 
+<ion-content padding>
+  
+  <!--<p>
+  <button ion-button block (click)="setValue()">Set Value</button>
+  <button ion-button block (click)="getValue()">Get Value</button>
+  </p>
+  
+  <ion-list>
+    
+	<ion-item>
+      <ion-label fixed> Web Server URL </ion-label>
+      <ion-input type="text" value="" [(ngModel)]="web_url"></ion-input>
+	</ion-item>
+	
+	</ion-list>   -->
+	
+	
+	<form (ngSubmit)="setValue()">
+	
+	
+
+        <ion-item>
+		
+		 <ion-label position="floating">Web Server URL</ion-label>
+         <ion-input type="text" size=300 minlength=15 type="url"  [(ngModel)]="weburl.path" name="path"></ion-input>
+		 
+		</ion-item>
+	
+      <p>
+	  <br>
+	   <ion-button shape="round" expand="block"  size='' color="secondary" (click)="setValue()">Save </ion-button>
+	   </p>
+    </form>
+	
+	
+</ion-content>

@@ -1,9 +1,24 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Two
+      Scan 
     </ion-title>
+	
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content padding>
+    <ion-button shape="round" expand="block"  size='' color="secondary" (click)="scan()">SCAN NOW! </ion-button>
+	
+	 <!--<ion-button shape="round" expand="block"  size='' color="secondary" (click)="testmethod()">TEST NOW! </ion-button>-->
+	 
+    	<ion-list>
+    
+	<ion-item>
+      <ion-label fixed> 1Scanned Number ver1&nbsp;-</ion-label>
+      <ion-input type="text" value="" [(ngModel)]="num"></ion-input>
+	</ion-item>
+	
+	</ion-list>
+
+</ion-content>
